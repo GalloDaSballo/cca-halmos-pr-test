@@ -1,0 +1,351 @@
+Compiling 45 files with Solc 0.8.30
+installing solc version "0.8.30"
+Successfully installed solc 0.8.30
+Solc 0.8.30 finished in 4.14s
+Compiler run successful!
+stderr:note[unused-import]: unused imports should be removed
+ --> /yices/recon/script/Counter.s.sol:4:17
+  |
+4 | import {Script, console} from "forge-std/Script.sol";
+  |                 -------
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unused-import
+
+
+stderr:note[mixed-case-variable]: mutable variables should use mixedCase
+ --> /yices/recon/test/recon/BeforeAfter.sol:9:17
+  |
+9 |         uint256 counter_number;
+  |                 --------------
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-variable
+
+note[unaliased-plain-import]: use named imports '{A, B}' or alias 'import ".." as X'
+ --> /yices/recon/test/recon/CryticToFoundry.sol:6:8
+  |
+6 | import "forge-std/console2.sol";
+  |        ------------------------
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unaliased-plain-import
+
+note[mixed-case-function]: function names should use mixedCase
+  --> /yices/recon/test/recon/targets/AdminTargets.sol:18:14
+   |
+18 |     function counter_increment_asAdmin() public updateGhosts asAdmin {
+   |              -------------------------
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[unused-import]: unused imports should be removed
+ --> /yices/recon/test/recon/targets/AdminTargets.sol:5:9
+  |
+5 | import {BeforeAfter} from "../BeforeAfter.sol";
+  |         -----------
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unused-import
+
+note[unused-import]: unused imports should be removed
+ --> /yices/recon/test/recon/targets/AdminTargets.sol:7:9
+  |
+7 | import {vm} from "@chimera/Hevm.sol";
+  |         --
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unused-import
+
+note[unaliased-plain-import]: use named imports '{A, B}' or alias 'import ".." as X'
+  --> /yices/recon/test/recon/Setup.sol:16:8
+   |
+16 | import "src/Counter.sol";
+   |        -----------------
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#unaliased-plain-import
+
+note[unused-import]: unused imports should be removed
+ --> /yices/recon/test/Counter.t.sol:4:15
+  |
+4 | import {Test, console} from "forge-std/Test.sol";
+  |               -------
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unused-import
+
+note[mixed-case-function]: function names should use mixedCase
+  --> /yices/recon/test/recon/TargetFunctions.sol:21:14
+   |
+21 |     function counter_increment() public updateGhosts asActor {
+   |              -----------------
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[mixed-case-function]: function names should use mixedCase
+  --> /yices/recon/test/recon/TargetFunctions.sol:25:14
+   |
+25 |     function counter_setNumber1(uint256 newNumber) public updateGhosts asActor {
+   |              ------------------
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[mixed-case-function]: function names should use mixedCase
+  --> /yices/recon/test/recon/targets/DoomsdayTargets.sol:22:14
+   |
+22 |     function doomsday_increment_never_reverts() public stateless asAdmin {
+   |              --------------------------------
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[unused-import]: unused imports should be removed
+ --> /yices/recon/test/recon/targets/DoomsdayTargets.sol:5:9
+  |
+5 | import {BeforeAfter} from "../BeforeAfter.sol";
+  |         -----------
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unused-import
+
+
+stderr:note[unused-import]: unused imports should be removed
+ --> /yices/recon/test/recon/targets/DoomsdayTargets.sol:7:9
+  |
+7 | import {vm} from "@chimera/Hevm.sol";
+  |         --
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unused-import
+
+note[mixed-case-function]: function names should use mixedCase
+  --> /yices/recon/test/recon/TargetFunctions.sol:42:14
+   |
+42 |     function counter_setNumber2(uint256 newNumber) public asActor {
+   |              ------------------
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[mixed-case-function]: function names should use mixedCase
+  --> /yices/recon/test/recon/targets/ManagersTargets.sol:28:14
+   |
+28 |     function switch_asset(uint256 entropy) public {
+   |              ------------
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[unused-import]: unused imports should be removed
+ --> /yices/recon/test/recon/TargetFunctions.sol:5:9
+  |
+5 | import {vm} from "@chimera/Hevm.sol";
+  |         --
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unused-import
+
+note[mixed-case-function]: function names should use mixedCase
+  --> /yices/recon/test/recon/targets/ManagersTargets.sol:33:14
+   |
+33 |     function add_new_asset(uint8 decimals) public returns (address) {
+   |              -------------
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[mixed-case-function]: function names should use mixedCase
+  --> /yices/recon/test/recon/targets/ManagersTargets.sol:44:14
+   |
+44 |     function asset_approve(address to, uint128 amt) public updateGhosts asActor {
+   |              -------------
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+
+stderr:note[mixed-case-function]: function names should use mixedCase
+  --> /yices/recon/test/recon/targets/ManagersTargets.sol:49:14
+   |
+49 |     function asset_mint(address to, uint128 amt) public updateGhosts asAdmin {
+   |              ----------
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[unused-import]: unused imports should be removed
+ --> /yices/recon/test/recon/targets/ManagersTargets.sol:5:9
+  |
+5 | import {BeforeAfter} from "../BeforeAfter.sol";
+  |         -----------
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unused-import
+
+note[unused-import]: unused imports should be removed
+ --> /yices/recon/test/recon/targets/ManagersTargets.sol:7:9
+  |
+7 | import {vm} from "@chimera/Hevm.sol";
+  |         --
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unused-import
+
+
+
+Running 1 tests for test/recon/CryticToFoundry.sol:CryticToFoundry
+Generating SMT queries in /tmp/setUp-3rr3i3k6
+setUp() trace #0:
+    CALL CryticToFoundry::setUp() (caller: 0x1804c8ab1f12e6bbf3894d4083f33e07309d1f38)
+        SLOAD  @[95m0x126c31e50963778e01bcca7dcbbc06729523ac426d95028d4028eb31d0c3bd30  0x00
+        SLOAD  @[95m0x126c31e50963778e01bcca7dcbbc06729523ac426d95028d4028eb31d0c3bd30  0x00
+        SLOAD  @[95m1  0x0000000000000000000000000000000000000000000000000000000000000001
+        SSTORE @[95m1  0x0000000000000000000000000000000000000000000000000000000000000002
+        SLOAD  @[95m1  0x0000000000000000000000000000000000000000000000000000000000000002
+        SLOAD  @[95m0xb10e2d527612073b26eecdfd717e6a320cf44b4afac2b0732d9fcbe2b7fa0cf7  0x00
+        SSTORE @[95m0xb10e2d527612073b26eecdfd717e6a320cf44b4afac2b0732d9fcbe2b7fa0cf7  0x00000000000000000000000000000000000000000000000000000000000411c3
+        SLOAD  @[95m1  0x0000000000000000000000000000000000000000000000000000000000000002
+        SLOAD  @[95m0x126c31e50963778e01bcca7dcbbc06729523ac426d95028d4028eb31d0c3bd30  0x00
+        SSTORE @[95m0x126c31e50963778e01bcca7dcbbc06729523ac426d95028d4028eb31d0c3bd30  0x0000000000000000000000000000000000000000000000000000000000000002
+        CREATE 0xaaaa0002::<7875 bytes of initcode>
+            SLOAD  @[95m0  0x0000000000000000000000000000000000000000000000000000000000000000
+            SSTORE @[95m0  0x5465737420546f6b656e00000000000000000000000000000000000000000014
+            SLOAD  @[95m1  0x0000000000000000000000000000000000000000000000000000000000000000
+            SSTORE @[95m1  0x5453540000000000000000000000000000000000000000000000000000000006
+            SLOAD  @[95m0  0x5465737420546f6b656e00000000000000000000000000000000000000000014
+         RETURN <5873 bytes of code>
+        SLOAD  @[95m0x9d55cdb64b9e8a9eea4df017409b63429712703f283e0a860b3a486cc97c9549  0x00
+        SLOAD  @[95m0x9d55cdb64b9e8a9eea4df017409b63429712703f283e0a860b3a486cc97c9549  0x00
+        SLOAD  @[95m4  0x0000000000000000000000000000000000000000000000000000000000000000
+        SSTORE @[95m4  0x0000000000000000000000000000000000000000000000000000000000000001
+        SLOAD  @[95m4  0x0000000000000000000000000000000000000000000000000000000000000001
+        SLOAD  @[95m0x8a35acfbc15ff81a39ae7d344fd709f28e8600b4aa8c65c6b64bfe7fe36bd19b  0x00
+        SSTORE @[95m0x8a35acfbc15ff81a39ae7d344fd709f28e8600b4aa8c65c6b64bfe7fe36bd19b  0x00000000000000000000000000000000000000000000000000000000aaaa0002
+        SLOAD  @[95m4  0x0000000000000000000000000000000000000000000000000000000000000001
+        SLOAD  @[95m0x9d55cdb64b9e8a9eea4df017409b63429712703f283e0a860b3a486cc97c9549  0x00
+        SSTORE @[95m0x9d55cdb64b9e8a9eea4df017409b63429712703f283e0a860b3a486cc97c9549  0x0000000000000000000000000000000000000000000000000000000000000001
+        SLOAD  @[95m3  0x0000000000000000000000000000000000000000000000000000000000000000
+        SSTORE @[95m3  0x00000000000000000000000000000000000000000000000000000000aaaa0002
+        CREATE Counter::<917 bytes of initcode>
+            SLOAD  @[95m0  0x0000000000000000000000000000000000000000000000000000000000000000
+            SSTORE @[95m0  0x0000000000000000000000000000000000000000000000000000000000000001
+         RETURN <772 bytes of code>
+        SLOAD  @[95m6  0x0000000000000000000000000000000000000000000000000000000000000000
+        SSTORE @[95m6  0x00000000000000000000000000000000000000000000000000000000aaaa0003
+        SLOAD  @[95m6  0x00000000000000000000000000000000000000000000000000000000aaaa0003
+        SLOAD  @[95m1  0x0000000000000000000000000000000000000000000000000000000000000002
+        SLOAD  @[95m0xb10e2d527612073b26eecdfd717e6a320cf44b4afac2b0732d9fcbe2b7fa0cf6  0x0000000000000000000000007fa9385be102ac3eac297483dd6233d62b3e1496
+        SLOAD  @[95m0xb10e2d527612073b26eecdfd717e6a320cf44b4afac2b0732d9fcbe2b7fa0cf7  0x00000000000000000000000000000000000000000000000000000000000411c3
+        SLOAD  @[95m4  0x0000000000000000000000000000000000000000000000000000000000000001
+        SLOAD  @[95m0x8a35acfbc15ff81a39ae7d344fd709f28e8600b4aa8c65c6b64bfe7fe36bd19b  0x00000000000000000000000000000000000000000000000000000000aaaa0002
+        CALL hevm::prank(0x0000000000000000000000007fa9385be102ac3eac297483dd6233d62b3e1496) (caller: CryticToFoundry)
+         0x
+        CALL 0xaaaa0002::mint(0x0000000000000000000000007fa9385be102ac3eac297483dd6233d62b3e1496000000000000000000000000000000000000000000ffffffffffffffffffffff) (caller: CryticToFoundry)
+            SLOAD  @[95m2  0x0000000000000000000000000000000000000000000000000000000000000000
+            SLOAD  @[95m2  0x0000000000000000000000000000000000000000000000000000000000000000
+            SLOAD  @[95m2  0x0000000000000000000000000000000000000000000000000000000000000000
+            SSTORE @[95m2  0x000000000000000000000000000000000000000000ffffffffffffffffffffff
+            SLOAD  @[95m0x1da434b76eba4736d6e760bfd78cbf883a0776ee1666a9157f99ab1b97923a3c  0x00
+            SLOAD  @[95m0x1da434b76eba4736d6e760bfd78cbf883a0776ee1666a9157f99ab1b97923a3c  0x00
+            SSTORE @[95m0x1da434b76eba4736d6e760bfd78cbf883a0776ee1666a9157f99ab1b97923a3c  0x000000000000000000000000000000000000000000ffffffffffffffffffffff
+            LOG3(topic0=0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, topic1=0x00, topic2=0x7fa9385be102ac3eac297483dd6233d62b3e1496, data=0x000000000000000000000000000000000000000000ffffffffffffffffffffff)
+         RETURN 0x
+        CALL hevm::prank(0x00000000000000000000000000000000000000000000000000000000000411c3) (caller: CryticToFoundry)
+         0x
+        CALL 0xaaaa0002::mint(0x00000000000000000000000000000000000000000000000000000000000411c3000000000000000000000000000000000000000000ffffffffffffffffffffff) (caller: 0x411c3)
+            SLOAD  @[95m2  0x000000000000000000000000000000000000000000ffffffffffffffffffffff
+            SLOAD  @[95m2  0x000000000000000000000000000000000000000000ffffffffffffffffffffff
+            SLOAD  @[95m2  0x000000000000000000000000000000000000000000ffffffffffffffffffffff
+            SSTORE @[95m2  0x000000000000000000000000000000000000000001fffffffffffffffffffffe
+            SLOAD  @[95m0x2b68d2c1315e7fa36eef26963d0d7539cf25eb503e1fb10381ff4ad02939fa75  0x00
+            SLOAD  @[95m0x2b68d2c1315e7fa36eef26963d0d7539cf25eb503e1fb10381ff4ad02939fa75  0x00
+            SSTORE @[95m0x2b68d2c1315e7fa36eef26963d0d7539cf25eb503e1fb10381ff4ad02939fa75  0x000000000000000000000000000000000000000000ffffffffffffffffffffff
+            LOG3(topic0=0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, topic1=0x00, topic2=0x411c3, data=0x000000000000000000000000000000000000000000ffffffffffffffffffffff)
+         RETURN 0x
+        SLOAD  @[95m4  0x0000000000000000000000000000000000000000000000000000000000000001
+        SLOAD  @[95m0x8a35acfbc15ff81a39ae7d344fd709f28e8600b4aa8c65c6b64bfe7fe36bd19b  0x00000000000000000000000000000000000000000000000000000000aaaa0002
+        CALL hevm::prank(0x0000000000000000000000007fa9385be102ac3eac297483dd6233d62b3e1496) (caller: CryticToFoundry)
+         0x
+        CALL 0xaaaa0002::approve(0x00000000000000000000000000000000000000000000000000000000aaaa0003ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff) (caller: CryticToFoundry)
+            SLOAD  @[95m0xb939a7d34b6b918d5844ada9ebbce18877c8da2a6ef31bc1b6d8b6afef581edb  0x00
+            SSTORE @[95m0xb939a7d34b6b918d5844ada9ebbce18877c8da2a6ef31bc1b6d8b6afef581edb  0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+            LOG3(topic0=0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925, topic1=0x7fa9385be102ac3eac297483dd6233d62b3e1496, topic2=0xaaaa0003, data=0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+         RETURN 0x0000000000000000000000000000000000000000000000000000000000000001
+        CALL hevm::prank(0x00000000000000000000000000000000000000000000000000000000000411c3) (caller: CryticToFoundry)
+         0x
+        CALL 0xaaaa0002::approve(0x00000000000000000000000000000000000000000000000000000000aaaa0003ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff) (caller: 0x411c3)
+            SLOAD  @[95m0xdc3660fecaa850070bbd43135d497181ff578fa66e94929fccd6a666ae8a5bfa  0x00
+            SSTORE @[95m0xdc3660fecaa850070bbd43135d497181ff578fa66e94929fccd6a666ae8a5bfa  0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+            LOG3(topic0=0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925, topic1=0x411c3, topic2=0xaaaa0003, data=0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+         RETURN 0x0000000000000000000000000000000000000000000000000000000000000001
+        SLOAD  @[95m32  0x0000000000000000000000000000000000000000000000000000000000000000
+        SSTORE @[95m32  0x0000000000000000000000000000000000000000000000000000000000000001
+        SLOAD  @[95m32  0x0000000000000000000000000000000000000000000000000000000000000001
+        SLOAD  @[95m0xc97bfaf2f8ee708c303a06d134f5ecd8389ae0432af62dc132a24118292866bb  0x00
+        SSTORE @[95m0xc97bfaf2f8ee708c303a06d134f5ecd8389ae0432af62dc132a24118292866bb  0x0000000000000000000000007fa9385be102ac3eac297483dd6233d62b3e1496
+     RETURN 0x
+
+
+ Initial Invariant Target Functions 
+ CryticToFoundry.sol:CryticToFoundry @                                        
+ 0x7fa9385be102ac3eac297483dd6233d62b3e1496                                   
+  add_new_asset(uint8)                                                     
+  asset_approve(address,uint128)                                           
+  asset_mint(address,uint128)                                              
+  counter_increment()                                                      
+  counter_increment_asAdmin()                                              
+  counter_setNumber1(uint256)                                              
+  counter_setNumber2(uint256)                                              
+  doomsday_increment_never_reverts()                                       
+  switchActor(uint256)                                                     
+  switch_asset(uint256)                                                    
+
+
+
+Generating SMT queries in /tmp/invariant_number_never_zero-pvxu2ix4
+Executing invariant_number_never_zero
+Generating SMT queries in /tmp/_compute_frontier-dzhkjwep
+Generating SMT queries in /tmp/_compute_frontier-ol_qvvwr
+Found potential path with path_id=171 (fail flag set) VmAssertion(cond=False, msg='doomsday_increment_never_reverts')
+Checking path condition path_id=171
+  Checking with external solver process
+    /usr/local/bin/yices-smt2 --smt2-model-format --bvconst-in-decimal /tmp/_compute_frontier-ol_qvvwr/171.smt2 > /tmp/_compute_frontier-ol_qvvwr/171.smt2.out
+Assertion failure detected in CryticToFoundry.doomsday_increment_never_reverts()
+Trace:
+    CALL CryticToFoundry::doomsday_increment_never_reverts() (value: halmos_msg_value_0x7fa9385be102ac3eac297483dd6233d62b3e1496_be0296b_55) (caller: halmos_msg_sender_0x7fa9385be102ac3eac297483dd6233d62b3e1496_db0f012_54)
+        CALL hevm::prank(0x0000000000000000000000007fa9385be102ac3eac297483dd6233d62b3e1496) (caller: CryticToFoundry)
+         0x
+        SLOAD  @[95m6  0x00000000000000000000000000000000000000000000000000000000aaaa0003
+        CALL Counter::increment() (caller: CryticToFoundry)
+            SLOAD  @[95m0  p_newNumber_uint256_519e5f1_24
+        [31m REVERT [31m0x4e487b710000000000000000000000000000000000000000000000000000000000000011[31m (error: Revert())
+    [31m STATICCALL [31m0x[31m (error: FailCheatcode("VmAssertion(cond=False, msg='doomsday_increment_never_reverts')"))
+[31mCounterexample: 
+    halmos_block_timestamp_depth1_5ba4c2f = 0x8000000000000000
+    halmos_msg_value_0x7fa9385be102ac3eac297483dd6233d62b3e1496_62f99c3_23 = 0x00
+    halmos_msg_value_0x7fa9385be102ac3eac297483dd6233d62b3e1496_be0296b_55 = 0x00
+    p_newNumber_uint256_519e5f1_24 = 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+Sequence:
+    CALL CryticToFoundry::counter_setNumber1(p_newNumber_uint256_519e5f1_24) (value: halmos_msg_value_0x7fa9385be102ac3eac297483dd6233d62b3e1496_62f99c3_23) (caller: halmos_msg_sender_0x7fa9385be102ac3eac297483dd6233d62b3e1496_df36992_22)
+        SLOAD  @[95m6  0x00000000000000000000000000000000000000000000000000000000aaaa0003
+        STATICCALL Counter::number()[33m [static] (caller: CryticToFoundry)
+            SLOAD  @[95m0  0x0000000000000000000000000000000000000000000000000000000000000001
+         RETURN 0x0000000000000000000000000000000000000000000000000000000000000001
+        SLOAD  @[95m7  0x0000000000000000000000000000000000000000000000000000000000000000
+        SSTORE @[95m7  0x0000000000000000000000000000000000000000000000000000000000000001
+        SLOAD  @[95m0  0x0000000000000000000000007fa9385be102ac3eac297483dd6233d62b3e1496
+        CALL hevm::prank(0x0000000000000000000000007fa9385be102ac3eac297483dd6233d62b3e1496) (caller: CryticToFoundry)
+         0x
+        SLOAD  @[95m6  0x00000000000000000000000000000000000000000000000000000000aaaa0003
+        CALL Counter::setNumber(p_newNumber_uint256_519e5f1_24) (caller: CryticToFoundry)
+            SLOAD  @[95m0  0x0000000000000000000000000000000000000000000000000000000000000001
+            SSTORE @[95m0  p_newNumber_uint256_519e5f1_24
+         RETURN 0x
+        SLOAD  @[95m6  0x00000000000000000000000000000000000000000000000000000000aaaa0003
+        STATICCALL Counter::number()[33m [static] (caller: CryticToFoundry)
+            SLOAD  @[95m0  p_newNumber_uint256_519e5f1_24
+         RETURN p_newNumber_uint256_519e5f1_24
+        STATICCALL hevm::assertTrue(0x0000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000136e756d62657220213d206e65774e756d62657200000000000000000000000000)[33m [static] (caller: CryticToFoundry)
+         0x
+        SLOAD  @[95m6  0x00000000000000000000000000000000000000000000000000000000aaaa0003
+        STATICCALL Counter::number()[33m [static] (caller: CryticToFoundry)
+            SLOAD  @[95m0  p_newNumber_uint256_519e5f1_24
+         RETURN p_newNumber_uint256_519e5f1_24
+        SLOAD  @[95m8  0x0000000000000000000000000000000000000000000000000000000000000000
+        SSTORE @[95m8  p_newNumber_uint256_519e5f1_24
+     RETURN 0x
+    CALL CryticToFoundry::doomsday_increment_never_reverts() (value: halmos_msg_value_0x7fa9385be102ac3eac297483dd6233d62b3e1496_be0296b_55) (caller: halmos_msg_sender_0x7fa9385be102ac3eac297483dd6233d62b3e1496_db0f012_54)
+        CALL hevm::prank(0x0000000000000000000000007fa9385be102ac3eac297483dd6233d62b3e1496) (caller: CryticToFoundry)
+         0x
+        SLOAD  @[95m6  0x00000000000000000000000000000000000000000000000000000000aaaa0003
+        CALL Counter::increment() (caller: CryticToFoundry)
+            SLOAD  @[95m0  p_newNumber_uint256_519e5f1_24
+        [31m REVERT [31m0x4e487b710000000000000000000000000000000000000000000000000000000000000011[31m (error: Revert())
+    [31m STATICCALL [31m0x[31m (error: FailCheatcode("VmAssertion(cond=False, msg='doomsday_increment_never_reverts')"))
+
+[PASS] invariant_number_never_zero() (paths: 70, time: 6.26s, bounds: [])
+Symbolic test result: 1 passed; 0 failed; time: 6.61s
+Coverage report saved to: ./halmos/coverage.html

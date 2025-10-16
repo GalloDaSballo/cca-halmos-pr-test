@@ -1,0 +1,205 @@
+No files changed, compilation skipped
+
+Running 1 tests for test/recon/CryticToFoundry.sol:CryticToFoundry
+Generating SMT queries in /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/setUp-5zkx5a8w
+
+
+╭─────────────────────── Initial Invariant Target Functions ───────────────────────╮
+│ CryticToFoundry.sol:CryticToFoundry @ 0x7fa9385be102ac3eac297483dd6233d62b3e1496 │
+│ ├── add_new_asset(uint8)                                                         │
+│ ├── asset_approve(address,uint128)                                               │
+│ ├── asset_mint(address,uint128)                                                  │
+│ ├── counter_increment()                                                          │
+│ ├── counter_increment_asAdmin()                                                  │
+│ ├── counter_setNumber1(uint256)                                                  │
+│ ├── counter_setNumber2(uint256)                                                  │
+│ ├── doomsday_increment_never_reverts()                                           │
+│ ├── switchActor(uint256)                                                         │
+│ └── switch_asset(uint256)                                                        │
+╰──────────────────────────────────────────────────────────────────────────────────╯
+
+
+Generating SMT queries in /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven
+Executing invariant_number_never_zero
+Generating SMT queries in /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/_compute_frontier-hm17mz1m
+Found potential path with path_id=7 (fail flag set) VmAssertion(cond=UGT(p_newNumber_uint256_6659551_24, 0), msg='number is zero')
+Checking path condition path_id=7
+  Checking with external solver process
+    /Users/entreprenerd2/.halmos/solvers/yices-smt2 --smt2-model-format --bvconst-in-decimal /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/7.smt2 > /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/7.smt2.out
+Found potential path with path_id=9 (fail flag set) VmAssertion(cond=UGT(p_newNumber_uint256_ef73589_28, 0), msg='number is zero')
+Checking path condition path_id=9
+  Checking with external solver process
+    /Users/entreprenerd2/.halmos/solvers/yices-smt2 --smt2-model-format --bvconst-in-decimal /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/9.smt2 > /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/9.smt2.out
+Generating SMT queries in /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/_compute_frontier-scw4ecte
+Found potential path with path_id=17 (fail flag set) VmAssertion(cond=UGT(p_newNumber_uint256_14a5a76_28, 0), msg='number is zero')
+Checking path condition path_id=17
+  Checking with external solver process
+    /Users/entreprenerd2/.halmos/solvers/yices-smt2 --smt2-model-format --bvconst-in-decimal /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/17.smt2 > /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/17.smt2.out
+Found potential path with path_id=19 (fail flag set) VmAssertion(cond=UGT(p_newNumber_uint256_81c2a33_32, 0), msg='number is zero')
+Checking path condition path_id=19
+  Checking with external solver process
+    /Users/entreprenerd2/.halmos/solvers/yices-smt2 --smt2-model-format --bvconst-in-decimal /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/19.smt2 > /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/19.smt2.out
+Found potential path with path_id=27 (fail flag set) VmAssertion(cond=UGT(p_newNumber_uint256_7d23159_33, 0), msg='number is zero')
+Checking path condition path_id=27
+  Checking with external solver process
+    /Users/entreprenerd2/.halmos/solvers/yices-smt2 --smt2-model-format --bvconst-in-decimal /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/27.smt2 > /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/27.smt2.out
+Found potential path with path_id=29 (fail flag set) VmAssertion(cond=UGT(p_newNumber_uint256_8a38a6b_37, 0), msg='number is zero')
+Checking path condition path_id=29
+  Checking with external solver process
+    /Users/entreprenerd2/.halmos/solvers/yices-smt2 --smt2-model-format --bvconst-in-decimal /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/29.smt2 > /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/29.smt2.out
+Found potential path with path_id=36 (fail flag set) VmAssertion(cond=UGT(p_newNumber_uint256_c4fc1a9_38, 0), msg='number is zero')
+Checking path condition path_id=36
+  Checking with external solver process
+    /Users/entreprenerd2/.halmos/solvers/yices-smt2 --smt2-model-format --bvconst-in-decimal /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/36.smt2 > /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/36.smt2.out
+Found potential path with path_id=38 (fail flag set) VmAssertion(cond=UGT(p_newNumber_uint256_bbebc77_42, 0), msg='number is zero')
+Checking path condition path_id=38
+  Checking with external solver process
+    /Users/entreprenerd2/.halmos/solvers/yices-smt2 --smt2-model-format --bvconst-in-decimal /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/38.smt2 > /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/38.smt2.out
+Found potential path with path_id=46 (fail flag set) VmAssertion(cond=UGT(p_newNumber_uint256_fdbbd14_41, 0), msg='number is zero')
+Checking path condition path_id=46
+  Checking with external solver process
+    /Users/entreprenerd2/.halmos/solvers/yices-smt2 --smt2-model-format --bvconst-in-decimal /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/46.smt2 > /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/46.smt2.out
+Found potential path with path_id=48 (fail flag set) VmAssertion(cond=UGT(p_newNumber_uint256_4c04548_45, 0), msg='number is zero')
+Checking path condition path_id=48
+  Checking with external solver process
+    /Users/entreprenerd2/.halmos/solvers/yices-smt2 --smt2-model-format --bvconst-in-decimal /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/48.smt2 > /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/48.smt2.out
+Found potential path with path_id=54 (fail flag set) VmAssertion(cond=UGT(p_newNumber_uint256_93a3066_48, 0), msg='number is zero')
+Checking path condition path_id=54
+  Checking with external solver process
+    /Users/entreprenerd2/.halmos/solvers/yices-smt2 --smt2-model-format --bvconst-in-decimal /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/54.smt2 > /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/54.smt2.out
+Found potential path with path_id=56 (fail flag set) VmAssertion(cond=UGT(p_newNumber_uint256_b23e4af_52, 0), msg='number is zero')
+Checking path condition path_id=56
+  Checking with external solver process
+    /Users/entreprenerd2/.halmos/solvers/yices-smt2 --smt2-model-format --bvconst-in-decimal /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/56.smt2 > /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/56.smt2.out
+Found potential path with path_id=59 (fail flag set) VmAssertion(cond=UGT(p_newNumber_uint256_6659551_24, 0), msg='number is zero')
+Checking path condition path_id=59
+  Checking with external solver process
+    /Users/entreprenerd2/.halmos/solvers/yices-smt2 --smt2-model-format --bvconst-in-decimal /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/59.smt2 > /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/59.smt2.out
+Found potential path with path_id=61 (fail flag set) VmAssertion(cond=UGT(p_newNumber_uint256_6659551_24, 0), msg='number is zero')
+Checking path condition path_id=61
+  Checking with external solver process
+    /Users/entreprenerd2/.halmos/solvers/yices-smt2 --smt2-model-format --bvconst-in-decimal /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/61.smt2 > /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/61.smt2.out
+Found potential path with path_id=63 (fail flag set) VmAssertion(cond=UGT(p_newNumber_uint256_6659551_24, 0), msg='number is zero')
+Checking path condition path_id=63
+  Checking with external solver process
+    /Users/entreprenerd2/.halmos/solvers/yices-smt2 --smt2-model-format --bvconst-in-decimal /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/63.smt2 > /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/63.smt2.out
+Found potential path with path_id=65 (fail flag set) VmAssertion(cond=UGT(1 + p_newNumber_uint256_6659551_24, 0), msg='number is zero')
+Checking path condition path_id=65
+  Checking with external solver process
+    /Users/entreprenerd2/.halmos/solvers/yices-smt2 --smt2-model-format --bvconst-in-decimal /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/65.smt2 > /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/65.smt2.out
+Found potential path with path_id=67 (fail flag set) VmAssertion(cond=UGT(p_newNumber_uint256_6659551_24, 0), msg='number is zero')
+Checking path condition path_id=67
+  Checking with external solver process
+    /Users/entreprenerd2/.halmos/solvers/yices-smt2 --smt2-model-format --bvconst-in-decimal /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/67.smt2 > /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/67.smt2.out
+Found potential path with path_id=69 (fail flag set) VmAssertion(cond=UGT(p_newNumber_uint256_777756a_48, 0), msg='number is zero')
+Checking path condition path_id=69
+  Checking with external solver process
+    /Users/entreprenerd2/.halmos/solvers/yices-smt2 --smt2-model-format --bvconst-in-decimal /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/69.smt2 > /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/69.smt2.out
+Found potential path with path_id=71 (fail flag set) VmAssertion(cond=UGT(p_newNumber_uint256_ba2ed3f_52, 0), msg='number is zero')
+Checking path condition path_id=71
+  Checking with external solver process
+    /Users/entreprenerd2/.halmos/solvers/yices-smt2 --smt2-model-format --bvconst-in-decimal /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/71.smt2 > /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/71.smt2.out
+Found potential path with path_id=172 (fail flag set) VmAssertion(cond=False, msg='doomsday_increment_never_reverts')
+Checking path condition path_id=172
+  Checking with external solver process
+    /Users/entreprenerd2/.halmos/solvers/yices-smt2 --smt2-model-format --bvconst-in-decimal /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/_compute_frontier-scw4ecte/172.smt2 > /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/_compute_frontier-scw4ecte/172.smt2.out
+Assertion failure detected in CryticToFoundry.doomsday_increment_never_reverts()
+Trace:
+    CALL CryticToFoundry::doomsday_increment_never_reverts() (value: halmos_msg_value_0x7fa9385be102ac3eac297483dd6233d62b3e1496_1ff2f2e_55) (caller: halmos_msg_sender_0x7fa9385be102ac3eac297483dd6233d62b3e1496_0009c58_54)
+        CALL hevm::prank(0x0000000000000000000000007fa9385be102ac3eac297483dd6233d62b3e1496) (caller: CryticToFoundry)
+        ↩ 0x
+        SLOAD  @6 → 0x00000000000000000000000000000000000000000000000000000000aaaa0003
+        CALL 0xaaaa0003::increment() (caller: CryticToFoundry)
+            SLOAD  @0 → p_newNumber_uint256_6659551_24
+        ↩ REVERT 0x4e487b710000000000000000000000000000000000000000000000000000000000000011 (error: Revert())
+    ↩ STATICCALL 0x (error: FailCheatcode("VmAssertion(cond=False, msg='doomsday_increment_never_reverts')"))
+Counterexample: 
+    halmos_block_timestamp_depth1_76f7b8b = 0x8000000000000000
+    halmos_msg_value_0x7fa9385be102ac3eac297483dd6233d62b3e1496_1ff2f2e_55 = 0x00
+    halmos_msg_value_0x7fa9385be102ac3eac297483dd6233d62b3e1496_e83a64e_23 = 0x00
+    p_newNumber_uint256_6659551_24 = 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+Sequence:
+    CALL CryticToFoundry::counter_setNumber1(p_newNumber_uint256_6659551_24) (value: halmos_msg_value_0x7fa9385be102ac3eac297483dd6233d62b3e1496_e83a64e_23) (caller: halmos_msg_sender_0x7fa9385be102ac3eac297483dd6233d62b3e1496_650162a_22)
+        SLOAD  @6 → 0x00000000000000000000000000000000000000000000000000000000aaaa0003
+        STATICCALL 0xaaaa0003::number() [static] (caller: CryticToFoundry)
+            SLOAD  @0 → 0x0000000000000000000000000000000000000000000000000000000000000001
+        ↩ RETURN 0x0000000000000000000000000000000000000000000000000000000000000001
+        SLOAD  @7 → 0x0000000000000000000000000000000000000000000000000000000000000000
+        SSTORE @7 ← 0x0000000000000000000000000000000000000000000000000000000000000001
+        SLOAD  @0 → 0x0000000000000000000000007fa9385be102ac3eac297483dd6233d62b3e1496
+        CALL hevm::prank(0x0000000000000000000000007fa9385be102ac3eac297483dd6233d62b3e1496) (caller: CryticToFoundry)
+        ↩ 0x
+        SLOAD  @6 → 0x00000000000000000000000000000000000000000000000000000000aaaa0003
+        CALL 0xaaaa0003::setNumber(p_newNumber_uint256_6659551_24) (caller: CryticToFoundry)
+            SLOAD  @0 → 0x0000000000000000000000000000000000000000000000000000000000000001
+            SSTORE @0 ← p_newNumber_uint256_6659551_24
+        ↩ RETURN 0x
+        SLOAD  @6 → 0x00000000000000000000000000000000000000000000000000000000aaaa0003
+        STATICCALL 0xaaaa0003::number() [static] (caller: CryticToFoundry)
+            SLOAD  @0 → p_newNumber_uint256_6659551_24
+        ↩ RETURN p_newNumber_uint256_6659551_24
+        STATICCALL hevm::assertTrue(0x0000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000136e756d62657220213d206e65774e756d62657200000000000000000000000000) [static] (caller: CryticToFoundry)
+        ↩ 0x
+        SLOAD  @6 → 0x00000000000000000000000000000000000000000000000000000000aaaa0003
+        STATICCALL 0xaaaa0003::number() [static] (caller: CryticToFoundry)
+            SLOAD  @0 → p_newNumber_uint256_6659551_24
+        ↩ RETURN p_newNumber_uint256_6659551_24
+        SLOAD  @8 → 0x0000000000000000000000000000000000000000000000000000000000000000
+        SSTORE @8 ← p_newNumber_uint256_6659551_24
+    ↩ RETURN 0x
+    CALL CryticToFoundry::doomsday_increment_never_reverts() (value: halmos_msg_value_0x7fa9385be102ac3eac297483dd6233d62b3e1496_1ff2f2e_55) (caller: halmos_msg_sender_0x7fa9385be102ac3eac297483dd6233d62b3e1496_0009c58_54)
+        CALL hevm::prank(0x0000000000000000000000007fa9385be102ac3eac297483dd6233d62b3e1496) (caller: CryticToFoundry)
+        ↩ 0x
+        SLOAD  @6 → 0x00000000000000000000000000000000000000000000000000000000aaaa0003
+        CALL 0xaaaa0003::increment() (caller: CryticToFoundry)
+            SLOAD  @0 → p_newNumber_uint256_6659551_24
+        ↩ REVERT 0x4e487b710000000000000000000000000000000000000000000000000000000000000011 (error: Revert())
+    ↩ STATICCALL 0x (error: FailCheatcode("VmAssertion(cond=False, msg='doomsday_increment_never_reverts')"))
+
+Found potential path with path_id=73 (fail flag set) VmAssertion(cond=UGT(p_newNumber_uint256_6659551_24, 0), msg='number is zero')
+Checking path condition path_id=73
+  Checking with external solver process
+    /Users/entreprenerd2/.halmos/solvers/yices-smt2 --smt2-model-format --bvconst-in-decimal /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/73.smt2 > /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/73.smt2.out
+Found potential path with path_id=75 (fail flag set) VmAssertion(cond=UGT(p_newNumber_uint256_ef73589_28, 0), msg='number is zero')
+Checking path condition path_id=75
+  Checking with external solver process
+    /Users/entreprenerd2/.halmos/solvers/yices-smt2 --smt2-model-format --bvconst-in-decimal /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/75.smt2 > /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/75.smt2.out
+Found potential path with path_id=77 (fail flag set) VmAssertion(cond=UGT(p_newNumber_uint256_ef73589_28, 0), msg='number is zero')
+Checking path condition path_id=77
+  Checking with external solver process
+    /Users/entreprenerd2/.halmos/solvers/yices-smt2 --smt2-model-format --bvconst-in-decimal /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/77.smt2 > /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/77.smt2.out
+Found potential path with path_id=79 (fail flag set) VmAssertion(cond=UGT(p_newNumber_uint256_ef73589_28, 0), msg='number is zero')
+Checking path condition path_id=79
+  Checking with external solver process
+    /Users/entreprenerd2/.halmos/solvers/yices-smt2 --smt2-model-format --bvconst-in-decimal /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/79.smt2 > /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/79.smt2.out
+Found potential path with path_id=81 (fail flag set) VmAssertion(cond=UGT(1 + p_newNumber_uint256_ef73589_28, 0), msg='number is zero')
+Checking path condition path_id=81
+  Checking with external solver process
+    /Users/entreprenerd2/.halmos/solvers/yices-smt2 --smt2-model-format --bvconst-in-decimal /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/81.smt2 > /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/81.smt2.out
+Found potential path with path_id=83 (fail flag set) VmAssertion(cond=UGT(p_newNumber_uint256_ef73589_28, 0), msg='number is zero')
+Checking path condition path_id=83
+  Checking with external solver process
+    /Users/entreprenerd2/.halmos/solvers/yices-smt2 --smt2-model-format --bvconst-in-decimal /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/83.smt2 > /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/83.smt2.out
+Found potential path with path_id=85 (fail flag set) VmAssertion(cond=UGT(p_newNumber_uint256_58c73e6_52, 0), msg='number is zero')
+Checking path condition path_id=85
+  Checking with external solver process
+    /Users/entreprenerd2/.halmos/solvers/yices-smt2 --smt2-model-format --bvconst-in-decimal /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/85.smt2 > /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/85.smt2.out
+Found potential path with path_id=87 (fail flag set) VmAssertion(cond=UGT(p_newNumber_uint256_13cd33f_56, 0), msg='number is zero')
+Checking path condition path_id=87
+  Checking with external solver process
+    /Users/entreprenerd2/.halmos/solvers/yices-smt2 --smt2-model-format --bvconst-in-decimal /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/87.smt2 > /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/87.smt2.out
+Found potential path with path_id=89 (fail flag set) VmAssertion(cond=UGT(p_newNumber_uint256_ef73589_28, 0), msg='number is zero')
+Checking path condition path_id=89
+  Checking with external solver process
+    /Users/entreprenerd2/.halmos/solvers/yices-smt2 --smt2-model-format --bvconst-in-decimal /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/89.smt2 > /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/89.smt2.out
+Found potential path with path_id=96 (fail flag set) VmAssertion(cond=UGT(p_newNumber_uint256_0e2b926_59, 0), msg='number is zero')
+Checking path condition path_id=96
+  Checking with external solver process
+    /Users/entreprenerd2/.halmos/solvers/yices-smt2 --smt2-model-format --bvconst-in-decimal /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/96.smt2 > /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/96.smt2.out
+Found potential path with path_id=98 (fail flag set) VmAssertion(cond=UGT(p_newNumber_uint256_c545845_63, 0), msg='number is zero')
+Checking path condition path_id=98
+  Checking with external solver process
+    /Users/entreprenerd2/.halmos/solvers/yices-smt2 --smt2-model-format --bvconst-in-decimal /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/98.smt2 > /var/folders/bc/qn3hxrcj2cq00s9pvsxf3pkc0000gn/T/invariant_number_never_zero-aksnvven/98.smt2.out
+# of potential paths involving assertion violations: 30 / 100 (--solver-threads 16)
+[PASS] invariant_number_never_zero() (paths: 100, time: 2.08s, bounds: [])
+Symbolic test result: 1 passed; 0 failed; time: 2.19s
